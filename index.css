@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+  background-color: #0e1525;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+}
+
+textarea{
+  font-family: 'Roboto Mono', monospace;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100vh;
+}
+
+.code-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 80%;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 49%;
+}
+
+.textarea-input {
+  box-sizing: border-box;
+  padding: 15px;
+  height: 250px;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  white-space: nowrap;
+  border: 1px solid teal;
+  background-color: #1d2b4d;
+  color: white;
+  resize: none;
+  outline: none;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+.textarea-output {
+  box-sizing: border-box;
+  padding: 15px;
+  height: 250px;
+  width: 100%;
+  border: 1px solid teal;
+  background-color: black;
+  color: white;
+  resize: none;
+  outline: none;
+  border-radius: 3px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.btn-run {
+  width: 150px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  padding: 15px;
+  color: white;
+  background-color: rgb(0, 150, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
